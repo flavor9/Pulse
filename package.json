@@ -1,0 +1,22 @@
+{
+  "name": "mod_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavor9/Pulse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavor9/Pulse/issues"
+  },
+  "homepage": "https://github.com/flavor9/Pulse#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
