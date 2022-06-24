@@ -24,5 +24,18 @@
         color: white;
         font-size: 18px;
         font-weight: 700;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    button {
+        margin-top: 2px;
     }
 }
