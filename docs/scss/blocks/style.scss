@@ -8,6 +8,7 @@ body {
 }
 
 .container {
+    position: relative;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -16,6 +17,8 @@ body {
 @import '../blocks/header.scss';
 @import '../blocks/buttons.scss';
 @import '../blocks/advantages.scss';
-@import '../blocks/media.scss';
 @import '../blocks/title.scss';
 @import '../blocks/consultation.scss';
+@import '../blocks/forms.scss';
+@import '../blocks/carousel.scss';
+@import '../blocks/media.scss';
