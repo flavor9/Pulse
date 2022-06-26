@@ -50,9 +50,17 @@
             width: 200px;
         }
     }
+    .catalog {
+        &__content {
+            justify-content: space-evenly;
+        }
+        &-item {
+            width: 300px;
+        }
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .container {
         padding: 0 60px;
     }
@@ -145,5 +153,15 @@
     }
     .consultation {
         min-width: 520px;
+    }
+    .catalog {
+        width: 520px;
+        &__tab {
+            height: 30px;
+            line-height: 30px;
+            div {
+                font-size: 12px;
+            }
+        }
     }
 }
