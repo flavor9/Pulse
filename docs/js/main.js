@@ -1,3 +1,4 @@
+//carousel
 $(document).ready(function() {
     $('.carousel__inner').slick({
         speed: 1200,
@@ -20,7 +21,7 @@ $(document).ready(function() {
     });
 
 
-
+    //slide effect with info 2 blocks
     function toggleSlide(item) {
         $(item).each(function(i) {
             $(this).on('click', function(e) {
@@ -32,4 +33,49 @@ $(document).ready(function() {
     };
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+
+    //modal open/close
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+    });
+
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks ').fadeOut();
+    });
+
+    $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        })
+    });
+
+    //forms validation
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Please specify your name",
+                phone: "Please enter a phone number",
+                email: {
+                    required: "We need your email address to contact you",
+                    email: "Your email address must be in the format of name@domain.com"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    //masked input
+    $('input[name=phone]').mask("+ 7(999) 999-99-99");
 });

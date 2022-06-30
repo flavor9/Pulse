@@ -27,7 +27,7 @@
                     <a href="tel:+74999228974" class="header__phone">
 						+7 (499) 922-89-74
 					</a>
-                    <button class="button">Request a call</button>
+                    <button data-modal="consultation" class="button">Request a call</button>
                 </div>
 
 
@@ -48,7 +48,7 @@
                         <img src="icons/message.png" alt="message"> We will answer all questions
                     </div>
                 </div>
-                <button class="button button_main">order a consultation</button>
+                <button data-modal="consultation" class="button button_main">order a consultation</button>
                 <div class="promo__link">
                     or
                     <a href="#">GO TO CATALOG</a>
@@ -86,10 +86,10 @@
                 Get a free consultation <br> on choosing a heart rate monitor
             </h2>
             <div class="consultation__descr">Just fill out the application form <br> and we will call you back within 10 minutes</div>
-            <form class="feed-form" action="#">
-                <input name="name" required placeholder="Your Name" type="text">
-                <input name="phone" required placeholder="Phone" type="number">
-                <input name="email" required placeholder="E-mail" type="email">
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" placeholder="Your Name" type="text">
+                <input name="phone" placeholder="Phone">
+                <input name="email" placeholder="E-mail" type="email">
 
                 <button class="button button_submit">order a consultation</button>
             </form>
@@ -159,7 +159,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="images/watch.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Heart rate monitor Suunto M2</div>
                             <div class="catalog-item__descr">For the first steps in heart rate training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
 
@@ -175,8 +175,34 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 RUB.</div>
-                            <div class="catalog-item__price">4500 RUB.</div>
+                            <div class="catalog-item__old-price">6690 RUB.</div>
+                            <div class="catalog-item__price">6641 RUB.</div>
+                        </div>
+                        <button class="button button_mini">BUY</button>
+                    </div>
+                </div>
+                <div class="catalog-item">
+                    <div class="catalog-item__wrapper">
+                        <div class="catalog-item__content catalog-item__content_active">
+                            <img src="images/watch.png" alt="pulsometr" class="catalog-item__img">
+                            <div class="catalog-item__subtitle">Polar FT4 heart rate monitor</div>
+                            <div class="catalog-item__descr">For the first steps in heart rate training</div>
+                            <a href="" class="catalog-item__link">LEARN MORE</a>
+
+                        </div>
+                        <ul class="catalog-item__list">
+                            <li>You will hear a sound notification about the desired heart rate during training;</li>
+                            <li>You will see an informative graphical indicator of target training heart rate zones;</li>
+                            <li>You will also see information about calorie consumption per workout;</li>
+                            <li>You can view data for 10 workouts.</li>
+                            <a href="#" class="catalog-item__back">back</a>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">7390 RUB.</div>
+                            <div class="catalog-item__price">7021 RUB.</div>
                         </div>
                         <button class="button button_mini">BUY</button>
                     </div>
@@ -211,7 +237,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="images/watch.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Heart rate monitor Suunto M2</div>
                             <div class="catalog-item__descr">For the first steps in heart rate training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
 
@@ -227,8 +253,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 RUB.</div>
-                            <div class="catalog-item__price">4500 RUB.</div>
+                            <div class="catalog-item__old-price">6690 RUB.</div>
+                            <div class="catalog-item__price">6641 RUB.</div>
                         </div>
                         <button class="button button_mini">BUY</button>
                     </div>
@@ -237,7 +263,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="images/watch.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
+                            <div class="catalog-item__subtitle">Polar FT4 heart rate monitor</div>
                             <div class="catalog-item__descr">For the first steps in heart rate training</div>
                             <a href="" class="catalog-item__link">LEARN MORE</a>
 
@@ -253,34 +279,8 @@
                     <hr>
                     <div class="catalog-item__footer">
                         <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 RUB.</div>
-                            <div class="catalog-item__price">4500 RUB.</div>
-                        </div>
-                        <button class="button button_mini">BUY</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="images/watch.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Polar FT1 heart rate monitor</div>
-                            <div class="catalog-item__descr">For the first steps in heart rate training</div>
-                            <a href="" class="catalog-item__link">LEARN MORE</a>
-
-                        </div>
-                        <ul class="catalog-item__list">
-                            <li>You will hear a sound notification about the desired heart rate during training;</li>
-                            <li>You will see an informative graphical indicator of target training heart rate zones;</li>
-                            <li>You will also see information about calorie consumption per workout;</li>
-                            <li>You can view data for 10 workouts.</li>
-                            <a href="#" class="catalog-item__back">back</a>
-                        </ul>
-                    </div>
-                    <hr>
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4750 RUB.</div>
-                            <div class="catalog-item__price">4500 RUB.</div>
+                            <div class="catalog-item__old-price">6690 RUB.</div>
+                            <div class="catalog-item__price">6641 RUB.</div>
                         </div>
                         <button class="button button_mini">BUY</button>
                     </div>
@@ -426,18 +426,41 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal">
+        <div class="modal" id="consultation">
             <div class="modal__wrapper">
                 <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Just fill out the application form</div>
                 <div class="modal__descr">and we will call you back within 10 minutes</div>
                 <form class="feed-form feed-form_mt25" action="#">
                     <input name="name" required placeholder="Your Name" type="text">
-                    <input name="phone" required placeholder="Phone" type="number">
+                    <input name="phone" required placeholder="Phone">
                     <input name="email" required placeholder="E-mail" type="email">
 
                     <button class="button button_submit">order a consultation</button>
                 </form>
+            </div>
+
+        </div>
+        <div class="modal" id="order">
+            <div class="modal__wrapper">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Your order:</div>
+                <div class="modal__descr">Polar FT1 heart rate monitor</div>
+                <form class="feed-form feed-form_mt25" action="#">
+                    <input name="name" required placeholder="Your Name" type="text">
+                    <input name="phone" required placeholder="Phone">
+                    <input name="email" required placeholder="E-mail" type="email">
+
+                    <button class="button button_submit">Buy</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__wrapper">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Thank you for your application!</div>
+                <div class="modal__descr">Our manager will contact you soon!</div>
             </div>
 
         </div>
@@ -448,6 +471,8 @@
     <script type="text/javascript " src="https://code.jquery.com/jquery-1.11.0.min.js "></script>
     <script type="text/javascript " src="https://code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
     <script src="js/slick.min.js "></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedimput.min.js"></script>
     <script src="js/main.js "></script>
 </body>
 
