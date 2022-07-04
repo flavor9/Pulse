@@ -125,13 +125,11 @@
         &__list {
             position: relative;
             width: 50%;
-            margin-left: 20px;
             transform: translateX(0%);
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
             margin-top: 0;
-            list-style-type: none;
             margin-right: 20px;
             &_active {
                 transform: translateX(-100%);
@@ -153,6 +151,9 @@
                     left: -14px;
                     top: 7px;
                 }
+            }
+            ul {
+                list-style-type: none;
             }
         }
         &__back {

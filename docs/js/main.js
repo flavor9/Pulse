@@ -1,15 +1,18 @@
 //carousel
 $(document).ready(function() {
     $('.carousel__inner').slick({
+        dots: false,
         speed: 1200,
         adaptiveHeight: true,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/c_left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/c_right.svg"></button>',
         responsive: [{
-            breakpoint: 992,
+            breakpoint: 1024,
             settings: {
-                dots: true,
-                arrows: false
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true
             }
         }]
     });
@@ -110,4 +113,15 @@ $(document).ready(function() {
             $('.pageup').fadeOut();
         }
     });
+
+    $("a[href=#up]").click(function() {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+        // $("html, body").animate({ scrollTop: 0 }, 400);
+        // return false;
+    });
+
+    //aniamted at scroll
+    new WOW().init();
 });

@@ -1,12 +1,6 @@
 .advantages {
     background-color: #f6f6f6;
     padding: 70px 0 65px 0;
-    &__header {
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
-        text-align: center;
-    }
     &__wrapper {
         margin-top: 60px;
         display: flex;
@@ -29,6 +23,14 @@
         margin-top: 20px;
         a {
             color: $main-color;
+        }
+    }
+    &__icons {
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
         }
     }
 }
